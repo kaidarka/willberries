@@ -1,6 +1,15 @@
+*
+    box-sizing: border-box
+body
+    padding: 0
+    margin: 0
+    font-family: 'Lato', sans-serif
+.header
+    padding: 15px 0
 .navigation
     list-style: none
     padding: 0
+    margin: 0
     &-link
         text-decoration: none
         color: #939699
@@ -27,4 +36,94 @@
     cursor: pointer
     &-icon
         margin-right: 10px
+        &:last-child
+            margin-right: 0
+            margin-left: 10px
+    &-price
+        margin-right: 10px
     
+.slide
+    padding-top: 90px
+    padding-bottom: 110px
+    &-1
+        background: #B4D1E0 url('../img/slide-image-1.png') no-repeat top right 20%
+    &-title
+        color: #262D33
+        font-size: 55px
+        line-height: 70px
+        font-family: 'Roboto Slab', serif
+        margin-top: 20px
+        margin-bottom: 15px
+    &-description
+        font-style: 18px
+        line-height: 30px
+        color: #4B5157
+        max-width: 335px
+        margin-bottom: 40px
+.label
+    background: #3DC47E
+    border-radius: 3px
+    padding: 5px 12px
+    color: #fff
+    font-size: 12px
+    line-height: 15px
+.slider
+    position: relative
+    &-nav 
+        position: absolute
+        top: 50%
+        width: 100%
+        transform: translateY(-50%)
+    &-button
+        background-color: transparent
+        border: none
+        cursor: pointer
+.card
+    min-height: 370px
+    border-radius: 10px
+    padding-top: 60px
+    padding-left: 46px
+    padding-right: 48px
+    padding-bottom: 80px
+    &-1
+        background: #e2e2e3 url('../img/card-image-1.jpg') no-repeat top right
+        background-size: cover
+    &-2
+        background: #e2e2e3 url('../img/card-image-2.jpg') no-repeat top right
+        background-size: cover
+    &-3
+        background: #CCD5E6 url('../img/card-image-3.png') no-repeat top right 10%
+        padding-top: 35px
+    &-4
+        background: #FF4F52 url('../img/card-image-4.png') no-repeat top right
+        padding-top: 35px
+        padding-left: 25px
+    &-title
+        color: #262D33
+        font-size: 25px
+        line-height: 30px
+        font-family: 'Roboto Slab', serif
+        max-width: 222px
+        margin: 0
+        &.large
+            max-width: 420px
+            font-style: 40px
+            line-height: 50px
+            margin-top: 30px
+            margin-bottom: 20px
+    &-text
+        max-width: 176px
+        color: #4B5157
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 25px
+        &.large
+            max-width: 320px
+    &-price
+        color: #ffffff
+        font-size: 14px
+        line-height: 20px
+        font-weight: 900
+
+.text-light
+    color: #ffffff
