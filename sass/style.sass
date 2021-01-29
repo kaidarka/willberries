@@ -45,12 +45,14 @@ body
 .slide
     padding-top: 90px
     padding-bottom: 110px
+    min-height: 568px
     &-1
         background: #B4D1E0 url('../img/slide-image-1.png') no-repeat top right 20%
     &-title
         color: #262D33
         font-size: 55px
         line-height: 70px
+        font-weight: 900
         font-family: 'Roboto Slab', serif
         margin-top: 20px
         margin-bottom: 15px
@@ -74,6 +76,7 @@ body
         top: 50%
         width: 100%
         transform: translateY(-50%)
+        z-index: 9
     &-button
         background-color: transparent
         border: none
@@ -203,3 +206,25 @@ body
 .payment-logo
     vertical-align: middle
     margin-right: 25px
+
+@media screen and ( max-width: 1200px )
+    .slide
+        background-size: cover
+    .card-3
+        background-size: cover
+
+@media screen and ( max-width: 992px )
+    .slider-nav
+        display: none
+
+@media screen and ( max-width: 576px )
+    .slide-title
+        font-size: 36px
+        line-height: 1.4
+        margin-bottom: 0
+    .card
+        background-position: left top
+        min-height: 300px
+        &-4
+            background-position: right top
+        
